@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      background: url('./slider/wr.jpg') no-repeat center/cover;
+      height: 300px;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      line-height: 400px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #333;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    li {
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      padding: 15px;
+      background: white;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .menu-details h3 {
+      font-size: 18px;
+      color: #007bff;
+      margin: 10px 0;
+    }
+
+    .menu-details p {
+      font-size: 16px;
+      color: #555;
+      margin: 5px 0 10px;
+      font-weight: bold;
+    }
+
+    .pesan-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pesan-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .pesan-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Warung Sederhana</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Menu Makanan</h2>
+      <ul>
+        <li>
+          <img src="./image/food1.jpg" alt="Nasi Goreng">
+          <div class="menu-details">
+            <h3>Nasi Goreng</h3>
+            <p>Harga: Rp10,000</p>
+          </div>
+          <a href="order.html?menu=Nasi%20Goreng&harga=10000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food2.jpg" alt="Mie Ayam">
+          <div class="menu-details">
+            <h3>Mie Ayam</h3>
+            <p>Harga: Rp15,000</p>
+          </div>
+          <a href="order.html?menu=Mie%20Ayam&harga=15000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food3.jpg" alt="Soto Ayam">
+          <div class="menu-details">
+            <h3>Soto Ayam</h3>
+            <p>Harga: Rp18,000</p>
+          </div>
+          <a href="order.html?menu=Soto%20Ayam&harga=18000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food4.jpg" alt="Ayam Bakar">
+          <div class="menu-details">
+            <h3>Ayam Bakar</h3>
+            <p>Harga: Rp25,000</p>
+          </div>
+          <a href="order.html?menu=Ayam%20Bakar&harga=25000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food5.jpg" alt="Rendang">
+          <div class="menu-details">
+            <h3>Rendang</h3>
+            <p>Harga: Rp30,000</p>
+          </div>
+          <a href="order.html?menu=Rendang&harga=30000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food6.jpg" alt="Bakso">
+          <div class="menu-details">
+            <h3>Bakso</h3>
+            <p>Harga: Rp12,000</p>
+          </div>
+          <a href="order.html?menu=Bakso&harga=12000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food7.jpg" alt="Pecel Lele">
+          <div class="menu-details">
+            <h3>Pecel Lele</h3>
+            <p>Harga: Rp20,000</p>
+          </div>
+          <a href="order.html?menu=Pecel%20Lele&harga=20000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food8.jpg" alt="Gado-gado">
+          <div class="menu-details">
+            <h3>Gado-gado</h3>
+            <p>Harga: Rp15,000</p>
+          </div>
+          <a href="order.html?menu=Gado%20gado&harga=15000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food9.jpg" alt="Sate Ayam">
+          <div class="menu-details">
+            <h3>Sate Ayam</h3>
+            <p>Harga: Rp20,000</p>
+          </div>
+          <a href="order.html?menu=Sate%20Ayam&harga=20000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/food10.jpg" alt="Gudeg">
+          <div class="menu-details">
+            <h3>Gudeg</h3>
+            <p>Harga: Rp22,000</p>
+          </div>
+          <a href="order.html?menu=Gudeg&harga=22000" class="pesan-btn">Pesan</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Menu Minuman</h2>
+      <ul>
+        <li>
+          <img src="./image/drink1.jpg" alt="Es Teler">
+          <div class="menu-details">
+            <h3>Es Teler</h3>
+            <p>Harga: Rp12,000</p>
+          </div>
+          <a href="order.html?menu=Es%20Teler&harga=12000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink2.jpg" alt="Teh Manis">
+          <div class="menu-details">
+            <h3>Teh Manis</h3>
+            <p>Harga: Rp5,000</p>
+          </div>
+          <a href="order.html?menu=Teh%20Manis&harga=5000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink3.jpg" alt="Kopi Hitam">
+          <div class="menu-details">
+            <h3>Kopi Hitam</h3>
+            <p>Harga: Rp8,000</p>
+          </div>
+          <a href="order.html?menu=Kopi%20Hitam&harga=8000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink4.jpg" alt="Jus Jeruk">
+          <div class="menu-details">
+            <h3>Jus Jeruk</h3>
+            <p>Harga: Rp10,000</p>
+          </div>
+          <a href="order.html?menu=Jus%20Jeruk&harga=10000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink5.jpg" alt="Jus Alpukat">
+          <div class="menu-details">
+            <h3>Jus Alpukat</h3>
+            <p>Harga: Rp15,000</p>
+          </div>
+          <a href="order.html?menu=Jus%20Alpukat&harga=15000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink6.jpg" alt="Es Kelapa Muda">
+          <div class="menu-details">
+            <h3>Es Kelapa Muda</h3>
+            <p>Harga: Rp12,000</p>
+          </div>
+          <a href="order.html?menu=Es%20Kelapa%20Muda&harga=12000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink7.jpg" alt="Susu Coklat">
+          <div class="menu-details">
+            <h3>Susu Coklat</h3>
+            <p>Harga: Rp8,000</p>
+          </div>
+          <a href="order.html?menu=Susu%20Coklat&harga=8000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink8.jpg" alt="Es Teh">
+          <div class="menu-details">
+            <h3>Es Teh</h3>
+            <p>Harga: Rp6,000</p>
+          </div>
+          <a href="order.html?menu=Es%20Teh&harga=6000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink9.jpg" alt="Air Mineral">
+          <div class="menu-details">
+            <h3>Air Mineral</h3>
+            <p>Harga: Rp3,000</p>
+          </div>
+          <a href="order.html?menu=Air%20Mineral&harga=3000" class="pesan-btn">Pesan</a>
+        </li>
+        <li>
+          <img src="./image/drink10.jpg" alt="Jus Mangga">
+          <div class="menu-details">
+            <h3>Jus Mangga</h3>
+            <p>Harga: Rp15,000</p>
+          </div>
+          <a href="order.html?menu=Jus%20Mangga&harga=15000" class="pesan-btn">Pesan</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
